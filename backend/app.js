@@ -4,7 +4,9 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 import { dbconnection } from "./dtatabase/dbconnection.js";
-
+import messageRouter from "./router/messageRouter.js";
+import { errorMiddleware } from "./middlewares/errorMiddleware.js";
+import userRouter from "./router/userRouter.js";
 const app = express();
 //connecting config 
 config({path:"./config/config.env"})
@@ -24,8 +26,12 @@ app.use(fileUpload({
     useTempFiles: true,
     tempFileDir: "/tmp/",
 }));
+app.use("/api/v1/message",messageRouter);
+app.use("/api/v1/user",userRouter);
+
 
 dbconnection();
  
+app.use(errorMiddleware);
 export default app;
  

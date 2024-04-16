@@ -1,34 +1,33 @@
 import mongoose from "mongoose";
-import validator from "validators";
-
+import validator from "validator";
 
 const messageschema = new mongoose.Schema({
-    firstName:{
+    firstName: {
         type: String,
         required: true,
-        minLength: [3,"first name must conatin at least 3 characters "]
+        minLength: [3, "First name must contain at least 3 characters"]
     },
-    lastName:{
+    lastName: {
         type: String,
         required: true,
-        minLength: [3,"last name must conatin at least 3 characters "]
+        minLength: [3, "Last name must contain at least 3 characters"]
     },
-    email:{
+    email: {
         type: String,
         required: true,
-        validate:[validator.isemail, "please Provide a valid email"]
+        validate: [validator.isEmail, "Provide a valid email!"],
     },
-    email:{
+    phone: {
         type: String,
         required: true,
-       minLength: [10,"phone must contain exact 10 digits"],
-       maxLength: [10,"phone must contain exact 10 digits"]
+        minLength: [10, "Phone must contain exactly 10 digits"],
+        maxLength: [10, "Phone must contain exactly 10 digits"]
     },
-    message:{
+    message: {
         type: String,
         required: true,
-        minLength: [10,"last name must conatin at least 10 characters "]
+        minLength: [10, "Message must contain at least 10 characters"]
     },
 });
 
-export const message = mongoose.model("Message", messageschema);
+export const Message = mongoose.model("Message", messageschema);
