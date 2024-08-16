@@ -90,7 +90,7 @@ const AppointmentForm = () => {
 
   return (
     <>
-      <div className="container form-component appointment-form">
+      <div className="containers form-component appointment-form">
         <h2>Appointment</h2>
         <form onSubmit={handleAppointment}>
           <div>
