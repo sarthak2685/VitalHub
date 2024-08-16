@@ -44,7 +44,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="container form-component login-form">
+      <div className="containers form-component login-form">
         <h2>Sign In</h2>
         <p>Please Login To Continue</p>
         <p>

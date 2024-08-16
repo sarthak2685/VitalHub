@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={"container"}>
+      <nav className={"containers"}>
         <div className="logo">
           <img src="/logo.png" alt="logo" className="logo-img" />
         </div>
