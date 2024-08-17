@@ -120,14 +120,14 @@ const Navbar = () => {
             <li>
               {isAuthenticated ? (
                 <button
-                  className="w-full text-left py-2 px-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg"
+                  className="ml-3 text-left py-2 px-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg"
                   onClick={handleLogout}
                 >
                   Logout
                 </button>
               ) : (
                 <button
-                  className="w-full text-left py-2 px-3 text-white bg-black text-xl font-semibold rounded-xl cursor-pointer items-center"
+                  className="ml-3 text-left py-2 px-3 text-white bg-black text-xl font-semibold rounded-xl cursor-pointer items-center"
                   onClick={goToLogin}
                 >
                   Login
