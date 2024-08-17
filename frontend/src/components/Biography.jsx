@@ -3,7 +3,7 @@ import React from "react";
 const Biography = ({imageUrl}) => {
   return (
     <>
-      <div className="container biography">
+      <div className="containers biography">
         <div className="banner">
           <img src={imageUrl} alt="whoweare" />
         </div>

@@ -47,12 +47,29 @@ const Navbar = () => {
   };
 
   return (
-    <>
+   
       <nav className="bg-transparent border-gray-200 dark:bg-gray-900 static lg:ml-16 lg:mr-16">
         <div className="flex flex-row items-center justify-between p-4">
           <div className="flex items-center">
             <Link to="/" onClick={() => setShow(false)}>
               <img src="/logo.png" alt="logo" className="h-12" />
+      <nav className={"containers"}>
+        <div className="logo">
+          <img src="/logo.png" alt="logo" className="logo-img" />
+        </div>
+        <div className={show ? "navLinks showmenu" : "navLinks"}>
+          <div className="links">
+            <Link to={"/"} onClick={() => setShow(!show)}>
+              Home
+            </Link>
+            <Link to={"/appointment"} onClick={() => setShow(!show)}>
+              Appointment
+            </Link>
+            <Link to={"/services"} onClick={() => setShow(!show)}>
+              Services
+            </Link>
+            <Link to={"/about"} onClick={() => setShow(!show)}>
+              About Us
             </Link>
           </div>
 
