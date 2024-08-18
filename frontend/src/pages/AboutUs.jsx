@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "../components/Hero";
 import Biography from "../components/Biography";
+import About from "../components/About";
 const AboutUs = () => {
   return (
     <>
-      <Hero
-        title={"Learn More About Us | VitalHub"}
-        imageUrl={"/about.png"}
+      <About
+      title={"Learn More About Us | VitalHub"}
+      imageUrl={"/about.png"}
       />
       <Biography imageUrl={"/whoweare.png"} />
     </>
