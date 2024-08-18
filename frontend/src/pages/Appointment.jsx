@@ -1,11 +1,11 @@
 import React from "react";
-import Hero from "../components/Hero";
 import AppointmentForm from "../components/AppointmentForm";
+import Appointmentt from "../components/Appointmentt";
 
 const Appointment = () => {
   return (
     <>
-      <Hero
+      <Appointmentt
         title={"Schedule Your Appointment | VitalHub"}
         imageUrl={"/signin.png"}
       />
