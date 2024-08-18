@@ -9,28 +9,15 @@ const Biography = ({imageUrl}) => {
         </div>
         <div className="banner">
           <p>Biography</p>
-          <h3>Who We Are</h3>
+          <h3>VitalHub: Revolutionizing Healthcare Management</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            blanditiis sequi aperiam. Debitis fugiat harum ex maxime illo
-            consequatur mollitia voluptatem omnis nihil nesciunt beatae esse
-            ipsam, sapiente totam aspernatur porro ducimus aperiam nisi. Ex
-            magnam voluptatum consectetur reprehenderit fugiat recusandae aut
-            similique illum natus velit, praesentium nostrum nesciunt. Deleniti,
-            nesciunt laboriosam totam iusto!
+            VitalHub is a pioneering force in healthcare technology, dedicated to transforming the way hospitals operate. As a leading provider of innovative hospital management software, we empower healthcare professionals to deliver exceptional patient care while optimizing operational efficiency.
           </p>
-          <p>We are all in 2024!</p>
-          <p>We are working on a MERN STACK PROJECT.</p>
+          <p>At VitalHub, we are committed to leveraging cutting-edge technology to drive innovation and improve patient outcomes. Our user-friendly interface and robust functionalities enable healthcare professionals to make data-driven decisions, enhance operational efficiency, and deliver superior care.</p>
+          <p>Our commitment to innovation drives us to continuously explore new ways to leverage technology to improve the overall patient experience.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            assumenda exercitationem accusamus sit repellendus quo optio dolorum
-            corporis corrupti. Quas similique vel minima veniam tenetur
-            obcaecati atque magni suscipit laboriosam! Veniam vitae minus nihil
-            cupiditate natus provident. Ex illum quasi pariatur odit nisi
-            voluptas illo qui ipsum mollitia. Libero, assumenda?
+            At VitalHub, we believe that by providing healthcare organizations with the tools they need to succeed, we can contribute to a healthier future for all.
           </p>
-          <p>Lorem ipsum dolor sit amet!</p>
-          <p>Coding is fun!</p>
         </div>
       </div>
     </>
