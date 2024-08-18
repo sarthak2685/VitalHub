@@ -49,7 +49,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-transparent border-gray-200 lg:ml-16 lg:mr-16 absolute top-0 left-0 right-0 w-full z-50">
-        <div className="flex flex-row items-center justify-between p-4 mr-12">
+        <div className="flex flex-row items-center justify-between p-4 mr-16">
+
           <div className="flex items-center">
             <Link to="/" onClick={() => setShow(false)}>
               <img src="/logo.png" alt="logo" className="h-12" />
@@ -67,7 +68,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="hidden lg:flex lg:items-center lg:w-auto lg:gap-12">
+          <div className="hidden lg:flex lg:items-center lg:w-auto lg:gap-12 mr-16">
             <ul className="flex flex-col lg:flex-row lg:space-x-12 font-semibold">
               {navItems.map((item) => (
                 <li key={item.name}>
