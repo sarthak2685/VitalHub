@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
 <footer className="">
-<hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+<hr className="my-6 border-gray-800 md:my-10" />
 
     <div className="container  mx-auto">
         <div className="flex flex-col items-center text-center">
@@ -52,7 +52,7 @@ function Footer() {
             </div>
         </div>
 
-        <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+        <hr className="my-6 border-gray-800 md:my-10" />
 
         <div className="flex flex-col items-center sm:flex-row sm:justify-between ml-4 mr-4 mt-4">
             <p className="text-sm text-black font-bold ">© Copyright 2024.| All Rights Reserved.</p>
