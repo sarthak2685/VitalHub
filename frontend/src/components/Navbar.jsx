@@ -48,8 +48,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-transparent border-gray-200 lg:ml-16 lg:mr-16 static">
-        <div className="flex flex-row items-center justify-between p-4">
+      <nav className="bg-transparent border-gray-200 lg:ml-16 lg:mr-16 absolute top-0 left-0 right-0 w-full z-50">
+        <div className="flex flex-row items-center justify-between p-4 mr-12">
           <div className="flex items-center">
             <Link to="/" onClick={() => setShow(false)}>
               <img src="/logo.png" alt="logo" className="h-12" />
@@ -84,14 +84,14 @@ const Navbar = () => {
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-4 mt-4 lg:mt-0">
               {isAuthenticated ? (
                 <button
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 mr-4"
                   onClick={handleLogout}
                 >
                   Logout
                 </button>
               ) : (
                 <button
-                  className="text-white bg-black text-xl font-semibold rounded-xl px-4 py-2 cursor-pointer items-center"
+                  className="text-white bg-black text-xl font-semibold rounded-xl px-4 py-2 cursor-pointer items-center mr-4"
                   onClick={goToLogin}
                 >
                   Login
@@ -104,7 +104,7 @@ const Navbar = () => {
 
       {/* Hamburger menu content */}
       {show && (
-        <div className="relative top-0 left-0 w-full bg-[#e5e5e5] lg:hidden z-40 transition-all duration-300 ease-in-out">
+        <div className="absolute top-16 left-0 w-full bg-[#e5e5e5] lg:hidden z-40 transition-all duration-300 ease-in-out">
           <ul className="flex flex-col font-semibold p-4">
             {navItems.map((item) => (
               <li key={item.name}>
@@ -120,14 +120,14 @@ const Navbar = () => {
             <li>
               {isAuthenticated ? (
                 <button
-                  className="ml-3 text-left py-2 px-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg"
+                  className="ml-3 text-left py-2 px-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg mr-4"
                   onClick={handleLogout}
                 >
                   Logout
                 </button>
               ) : (
                 <button
-                  className="ml-3 text-left py-2 px-3 text-white bg-black text-xl font-semibold rounded-xl cursor-pointer items-center"
+                  className="ml-3 text-left py-2 px-3 text-white bg-black text-xl font-semibold rounded-xl cursor-pointer items-center mr-4"
                   onClick={goToLogin}
                 >
                   Login
